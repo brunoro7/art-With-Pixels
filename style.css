@@ -2,6 +2,31 @@ body {
   background-color: slategrey;
 }
 
+#color-palette {
+  background-color: burlywood;
+  width: 240px;
+  height: 40px;
+}
+
 .color {
+  display: inline-block;
   list-style: none;
+  color: white;
+  border: solid black 1px;
+}
+
+.select-black {
+  background-color: black;
+}
+
+.select-blue {
+  background-color: blue;
+}
+
+.select-red {
+  background-color: red;
+}
+
+.select-green {
+  background-color: green;
 }
