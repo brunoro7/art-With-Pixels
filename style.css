@@ -2,17 +2,27 @@ body {
   background-color: slategrey;
 }
 
+#title {
+  text-align: center;
+}
+
 #color-palette {
+  text-align: justify;
+  margin: auto;
   background-color: burlywood;
-  width: 240px;
-  height: 40px;
+  width: 220px;
+  height: 46px;
 }
 
 .color {
   display: inline-block;
   list-style: none;
+  width: 40px;
+  height: 40px;
   color: white;
   border: solid black 1px;
+  margin-top: 2px;
+  text-align: center;
 }
 
 .select-black {
@@ -29,4 +39,13 @@ body {
 
 .select-green {
   background-color: green;
+}
+
+.pixel {
+  margin: auto;
+  list-style: none;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: solid black 1px;
 }
