@@ -9,11 +9,15 @@ function linhaBoxPixels (tamanhoBoxPixels){
   let cadaLinha = "";
   for (let iLinha = 0; iLinha < tamanhoBoxPixels; iLinha += 1){
     cadaLinha = cadaLinha + cadaPixel;
+    console.log(iLinha);
   }
+  for (let iLinha = 0; iLinha < tamanhoBoxPixels; iLinha += 1){
+    console.log(cadaLinha);
+  }
+
   return cadaLinha
 }
 console.log(linhaBoxPixels(tamanhoBoxPixels));
-
 /** ======= Função que imprimi a quantidade de linhas ======= */
 
 /** ======= Função que defini a cor preta como inicial 'selected' ======= */
