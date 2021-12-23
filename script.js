@@ -1,6 +1,6 @@
 //Trocar o elemento pelo .document necessário.
-let elemento = document.getElementsByClassName("pixel");
-let cadaPixel = elemento;
+let elemento = document.querySelector(".pixel");
+let cadaPixel = (elemento.innerHTML);
 
 /** ======= Função que cria a linha com os Pixels ======= */
 let tamanhoBoxPixels = 5;
@@ -30,4 +30,4 @@ console.log(linhaBoxPixels(tamanhoBoxPixels));
 
 /** ======= Função que escolhe cores aleatorias no carregamento ======= */
 
-console.log(cadaLinha);
+console.log("oi");
