@@ -7,10 +7,9 @@ body {
 }
 
 #color-palette {
-  text-align: justify;
+  text-align: center;
   margin: auto;
   background-color: burlywood;
-  width: 220px;
   height: 46px;
 }
 
@@ -41,9 +40,16 @@ body {
   background-color: green;
 }
 
-.pixel {
-  margin: auto;
+li {
   list-style: none;
+}
+
+#pixel-board {
+  text-align: center;
+}
+
+.pixel {
+  display: inline-block;
   background-color: white;
   width: 40px;
   height: 40px;
