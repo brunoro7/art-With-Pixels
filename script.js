@@ -1,5 +1,5 @@
 //Trocar o elemento pelo .document necessário.
-let elemento = "*";
+let elemento = document.getElementsByClassName('pixel');
 let cadaPixel = elemento;
 
 /** ======= Função que cria a linha com os Pixels ======= */
@@ -14,4 +14,18 @@ function linhaBoxPixels (tamanhoBoxPixels){
 }
 console.log(linhaBoxPixels(tamanhoBoxPixels));
 
-/** ======= Função que cria as linhas pelo tamanhoBoxPixels ======= */
+/** ======= Função que imprimi a quantidade de linhas ======= */
+
+/** ======= Função que defini a cor preta como inicial 'selected' ======= */
+
+/** ======= Função que escolhe a cor ======= */
+
+/** ======= Função que pinta ======= */
+
+/** ======= Função que reseta o quadro para branco ======= */
+
+/** ======= Função que defini o tamanho do quadro de 5 à 50 ======= */
+
+/** ======= Função que escolhe a cor ======= */
+
+/** ======= Função que escolhe cores aleatorias no carregamento ======= */
