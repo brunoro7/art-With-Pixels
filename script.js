@@ -8,13 +8,13 @@ let cadaPixel = document.querySelector(".pixel");
 for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
     let recebeCadaPixel = document.createElement("span");
       recebeCadaPixel.className = "pixel";
-      document.querySelector("#pixel-board").appendChild(recebeCadaPixel);
+      document.querySelector("#pixelOnLine").appendChild(recebeCadaPixel);
     };
 
   // for(let lineOfPixels = 0; lineOfPixels < pixelInline; lineOfPixels += 1){
   //   let pixelsLine = document.createElement("span");
   //   pixelsLine.className = "pixels";
-  //   document.querySelector("#pixel-board").appendChild(pixelsLine);
+  //   document.querySelector("#lineOfPixel").appendChild(pixelsLine);
   // }
 
 
