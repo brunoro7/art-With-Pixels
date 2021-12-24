@@ -1,24 +1,25 @@
-//Trocar o elemento pelo .document necessário.
-let elemento = document.querySelector(".pixel");
-let cadaPixel = (elemento.innerHTML);
+let tamanhoBoxPixels = 5;
+
+// let boxPixels = document.;
+let cadaPixel = document.querySelector(".pixel");
 
 /** ======= Função que cria a linha com os Pixels ======= */
-let tamanhoBoxPixels = 5;
-function linhaBoxPixels (tamanhoBoxPixels){
-  
-  let cadaLinha = "";
-  for (let iLinha = 0; iLinha < tamanhoBoxPixels; iLinha += 1){
-    cadaLinha = cadaLinha + cadaPixel;
-    console.log(iLinha);
-  }
-  for (let iLinha = 0; iLinha < tamanhoBoxPixels; iLinha += 1){
-    console.log(cadaLinha);
-  }
 
-  return cadaLinha
-}
-console.log(linhaBoxPixels(tamanhoBoxPixels));
-/** ======= Função que imprimi a quantidade de linhas ======= */
+for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
+    let recebeCadaPixel = document.createElement("span");
+      recebeCadaPixel.className = "pixel";
+      document.querySelector("#pixel-board").appendChild(recebeCadaPixel);
+    };
+
+  // for(let lineOfPixels = 0; lineOfPixels < pixelInline; lineOfPixels += 1){
+  //   let pixelsLine = document.createElement("span");
+  //   pixelsLine.className = "pixels";
+  //   document.querySelector("#pixel-board").appendChild(pixelsLine);
+  // }
+
+
+
+  /** ======= Função que imprimi a quantidade de linhas ======= */
 
 /** ======= Função que defini a cor preta como inicial 'selected' ======= */
 
@@ -33,5 +34,3 @@ console.log(linhaBoxPixels(tamanhoBoxPixels));
 /** ======= Função que escolhe a cor ======= */
 
 /** ======= Função que escolhe cores aleatorias no carregamento ======= */
-
-console.log("oi");

@@ -13,39 +13,30 @@ body {
   height: 46px;
 }
 
-.color {
-  display: inline-block;
-  list-style: none;
-  width: 40px;
-  height: 40px;
-  color: white;
-  border: solid black 1px;
-  margin-top: 2px;
-  text-align: center;
-}
-
-.select-black {
+.select-black.pixel {
   background-color: black;
+  color: aliceblue;
+  margin-top: 2px;
 }
 
-.select-blue {
+.select-blue.pixel {
   background-color: blue;
+  color: aliceblue;
 }
 
-.select-red {
+.select-red.pixel {
   background-color: red;
+  color: aliceblue;
 }
 
-.select-green {
+.select-green.pixel {
   background-color: green;
-}
-
-li {
-  list-style: none;
+  color: aliceblue;
 }
 
 #pixel-board {
   text-align: center;
+  margin-top: 10px;
 }
 
 .pixel {
@@ -54,4 +45,6 @@ li {
   width: 40px;
   height: 40px;
   border: solid black 1px;
+  margin: 0%;
+  padding: 0%;
 }
