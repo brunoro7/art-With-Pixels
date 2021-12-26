@@ -17,14 +17,21 @@ let tamanhoBoxPixels = 5;
     
 /** ======= Função que cria a linha com os Pixels ======= */
 
-  let cadaPixel = document.querySelector(".pixel");
-
 for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
   let recebeCadaPixel = document.createElement("div");
   recebeCadaPixel.className = "pixel";
-  document.querySelector("#pixelOnLine").appendChild(recebeCadaPixel);    
-  
-};
+  document.querySelector("#pixel-board").appendChild(recebeCadaPixel);
+
+  for(let indexCadaLinha = 0; indexCadaLinha < tamanhoBoxPixels-1; indexCadaLinha += 1 ){
+    let recebeCadaLine = document.createElement("div");
+    recebeCadaLine.className = "pixel";
+    document.querySelector("#pixel-board").appendChild(recebeCadaLine);
+  };
+}
+    console.log(recebeCadaLine);
+
+
+
 
 // let cadaLine = document.querySelector("section#pixelOnLine");
 // for(let lineOfPixel of lineOfPixel){
