@@ -5,17 +5,22 @@ let cadaPixel = document.querySelector(".pixel");
 
 /** ======= Função que cria a linha com os Pixels ======= */
 
+let cadaLine = document.getElementById("pixelOnLine");
 for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
-    let recebeCadaPixel = document.createElement("span");
-      recebeCadaPixel.className = "pixel";
-      document.querySelector("#pixelOnLine").appendChild(recebeCadaPixel);
-    };
+  let recebeCadaPixel = document.createElement("div");
+  recebeCadaPixel.className = "pixel";
+  document.querySelector("#pixelOnLine").appendChild(recebeCadaPixel);
+  for(let lineOfPixel = 0; lineOfPixel < tamanhoBoxPixels; lineOfPixel += 1){
+    let recebeCadaLine = document.createElement("div");
 
-  // for(let lineOfPixels = 0; lineOfPixels < pixelInline; lineOfPixels += 1){
-  //   let pixelsLine = document.createElement("span");
-  //   pixelsLine.className = "pixels";
-  //   document.querySelector("#lineOfPixel").appendChild(pixelsLine);
-  // }
+    // recebeCadaLine.className = "linePixel";
+
+    document.querySelector("#lineOfPixel").appendChild(recebeCadaLine);
+    };
+};
+
+
+
 
 
 
