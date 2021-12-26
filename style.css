@@ -13,24 +13,20 @@ body {
   height: 46px;
 }
 
-.select-black.pixel {
-  background-color: black;
+.selectBlack.pixel {
   color: aliceblue;
   margin-top: 2px;
 }
 
-.select-blue.pixel {
-  background-color: blue;
+.selectBlue.pixel {
   color: aliceblue;
 }
 
-.select-red.pixel {
-  background-color: red;
+.selectRed.pixel {
   color: aliceblue;
 }
 
-.select-green.pixel {
-  background-color: green;
+.selectGreen.pixel {
   color: aliceblue;
 }
 
@@ -41,15 +37,6 @@ body {
 
 .pixel {
   display: inline-block;
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  border: solid black 1px;
-  margin: 0%;
-  padding: 0%;
-}
-
-.linePixel {
   background-color: white;
   width: 40px;
   height: 40px;
