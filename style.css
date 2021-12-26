@@ -39,6 +39,9 @@ body {
   text-align: center;
   margin-top: 10px;
   line-height: 0;
+}
+
+.tamanhoBoardPixel {
   width: 250px;
   height: 250px;
 }

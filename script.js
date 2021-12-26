@@ -1,4 +1,7 @@
 let tamanhoBoxPixels = 5;
+// let boxBoardPixel = document.querySelector(".tamanhoBoardPixel");
+//      boxBoardPixel.style.width = ;
+//      boxBoardPixel.style.heigth = ;
 
 /** ======= Colorindo a paleta de cores ======= */
 
@@ -15,7 +18,8 @@ let tamanhoBoxPixels = 5;
     pixelGreen.className = "pixel selectGreen";
 
     
-/** ======= Função que cria a linha com os Pixels ======= */
+/** ======= Função que cria a tabela de Pixels ======= */
+
 
 for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
   let recebeCadaPixel = document.createElement("div");
@@ -28,7 +32,6 @@ for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
     document.querySelector("#pixel-board").appendChild(recebeCadaLine);
   };
 }
-    console.log(recebeCadaLine);
 
 
 
