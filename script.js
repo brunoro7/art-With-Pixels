@@ -2,23 +2,22 @@ let tamanhoBoxPixels = 5;
 
 /** ======= Colorindo a paleta de cores ======= */
 
-  let pixelBlack = document.querySelector(".selectBlack");
-  pixelBlack.style.backgroundColor = "black";
+  let pixelBlack = document.querySelector("li.first");
+    pixelBlack.className = "pixel selectBlack";
 
-  let pixelBlue = document.querySelector(".selectBlue");
-  pixelBlue.style.backgroundColor = "blue";
+  let pixelBlue = document.querySelector("li.second");
+    pixelBlue.className = "pixel selectBlue";
 
-  let pixelRed = document.querySelector(".selectRed");
-  pixelRed.style.backgroundColor = "red";
+  let pixelRed = document.querySelector("li.third");
+    pixelRed.className = "pixel selectRed";
 
-  let pixelGreen = document.querySelector(".selectGreen");
-  pixelGreen.style.backgroundColor = "green";
+  let pixelGreen = document.querySelector("li.four");
+    pixelGreen.className = "pixel selectGreen";
 
-
-// let boxPixels = document.;
-let cadaPixel = document.querySelector(".pixel");
-
+    
 /** ======= Função que cria a linha com os Pixels ======= */
+
+  let cadaPixel = document.querySelector(".pixel");
 
 for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){
   let recebeCadaPixel = document.createElement("div");

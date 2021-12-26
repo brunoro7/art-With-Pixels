@@ -14,19 +14,23 @@ body {
 }
 
 .selectBlack.pixel {
+  background-color: black;
   color: aliceblue;
   margin-top: 2px;
 }
 
 .selectBlue.pixel {
   color: aliceblue;
+  background-color: blue;
 }
 
 .selectRed.pixel {
+  background-color: red;
   color: aliceblue;
 }
 
 .selectGreen.pixel {
+  background-color: green;
   color: aliceblue;
 }
 
