@@ -13,27 +13,6 @@ body {
   height: 46px;
 }
 
-.selectBlack.pixel {
-  background-color: black;
-  color: aliceblue;
-  margin-top: 2px;
-}
-
-.selectBlue.pixel {
-  color: aliceblue;
-  background-color: blue;
-}
-
-.selectRed.pixel {
-  background-color: red;
-  color: aliceblue;
-}
-
-.selectGreen.pixel {
-  background-color: green;
-  color: aliceblue;
-}
-
 #pixel-board {
   margin: auto;
   text-align: center;
@@ -54,4 +33,25 @@ body {
   border: solid black 1px;
   margin: 0%;
   padding: 0%;
+}
+
+.selectBlack.color.pixel {
+  background-color: black;
+  color: aliceblue;
+  margin-top: 2px;
+}
+
+.selectBlue.color.pixel {
+  color: aliceblue;
+  background-color: blue;
+}
+
+.selectRed.color.pixel {
+  background-color: red;
+  color: aliceblue;
+}
+
+.selectGreen.color.pixel {
+  background-color: green;
+  color: aliceblue;
 }

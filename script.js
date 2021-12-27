@@ -5,17 +5,17 @@ let tamanhoBoxPixels = 5;
 
 /** ======= Colorindo a paleta de cores ======= */
 
-  let pixelBlack = document.querySelector("li.first");
-    pixelBlack.className = "pixel selectBlack";
+  let pixelBlack = document.querySelector("li.color.first");
+    pixelBlack.className = "pixel color selectBlack";
 
-  let pixelBlue = document.querySelector("li.second");
-    pixelBlue.className = "pixel selectBlue";
+  let pixelBlue = document.querySelector("li.color.second");
+    pixelBlue.className = "pixel color selectBlue";
 
-  let pixelRed = document.querySelector("li.third");
-    pixelRed.className = "pixel selectRed";
+  let pixelRed = document.querySelector("li.color.third");
+    pixelRed.className = "pixel color selectRed";
 
-  let pixelGreen = document.querySelector("li.four");
-    pixelGreen.className = "pixel selectGreen";
+  let pixelGreen = document.querySelector("li.color.four");
+    pixelGreen.className = "pixel color selectGreen";
 
     
 /** ======= Função que cria a tabela de Pixels ======= */
