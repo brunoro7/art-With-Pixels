@@ -21,8 +21,7 @@ body {
 }
 
 .tamanhoBoardPixel {
-  width: 250px;
-  height: 250px;
+  width: 0;
 }
 
 .pixel {
@@ -35,23 +34,27 @@ body {
   padding: 0%;
 }
 
-.selectBlack.color.pixel {
+.first.color.pixel {
   background-color: black;
   color: aliceblue;
   margin-top: 2px;
 }
 
-.selectBlue.color.pixel {
+.second.color.pixel {
   color: aliceblue;
   background-color: blue;
 }
 
-.selectRed.color.pixel {
+.third.color.pixel {
   background-color: red;
   color: aliceblue;
 }
 
-.selectGreen.color.pixel {
+.four.color.pixel {
   background-color: green;
   color: aliceblue;
+}
+
+.selected {
+  background-color: black;
 }
