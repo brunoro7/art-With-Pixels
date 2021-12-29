@@ -23,15 +23,15 @@ function QuadroPixel (){
 
   for(let indexCadaColuna = 0; indexCadaColuna < tamanhoBoxPixels; indexCadaColuna += 1 ){
     
-    for(let pixelInline = 0; pixelInline < tamanhoBoxPixels; pixelInline += 1){    
-      
-      let recebeCadaColuna = document.createElement("div");
-      recebeCadaColuna.className = "pixel";
-      pixelBoard.appendChild(recebeCadaColuna);
-      
+    let recebeCadaColuna = document.createElement("div");
+    recebeCadaColuna.className = "pixel";
+    pixelBoard.appendChild(recebeCadaColuna);
+
+    //obs: pixelInLine poderia começar no 1, e retirar o -1 do tamanhoBoxPixels
+    for(let pixelInline = 0; pixelInline < tamanhoBoxPixels -1; pixelInline += 1){
       let recebePixelInline = document.createElement("div");
-      recebePixelInline.className = "pixel";
-      pixelBoard.appendChild(recebePixelInline);
+        recebePixelInline.className = "pixel";
+        pixelBoard.appendChild(recebePixelInline);
     };
   }
 /** ======= Cálculo do Tamanho do 'quadro' de pixels ======= */
