@@ -4,19 +4,15 @@ let tamanhoBoxPixels = 5;
 const linhaBoxPixels = tamanhoBoxPixels;
 const colunaBoxPixels = tamanhoBoxPixels;
 
-/** ======= Colorindo a paleta de cores ======= */
+/** ======= Cada Cor Da Paleta ======= */
 
   let pixelBlack = document.getElementsByTagName("li")[0];
-    pixelBlack.className = "colorBlack";
 
   let pixelBlue = document.getElementsByTagName("li")[1];
-    pixelBlue.className = "colorBlue";
 
   let pixelRed = document.getElementsByTagName("li")[2];
-    pixelRed.className = "colorRed";
 
   let pixelGreen = document.getElementsByTagName("li")[3];
-    pixelGreen.className = "colorGreen";
     
 /** ======= Função que cria a tabela de Pixels ======= */
 
