@@ -57,24 +57,32 @@ colorPalette.addEventListener("click", colorSelected);
 
 /** ======= Função Que Pinta Cada Pixel ======= */
 
-// function colorePixel (event){
 
-//   const pixelClicado = event.target;
-//   let pixelSelecionadoColorido = document.querySelector(".selected");
+
+function colorePixel (event){
+    
+    const pixelSelecionadoColorido = document.querySelector(".selected");
+    
+    //windown... vai fazer assim que terminar de carregar;
+    const styleSelected = window.getComputedStyle(pixelSelecionadoColorido).getPropertyValue("background-color");  
+    
+    const pixelClicado = event.target;
   
-//   pixelClicado.style.backgroundColor = pixelSelecionadoColorido.style.backgroundColor;
-// }
-// pixelBoard.addEventListener("click", colorePixel);
+  pixelClicado.style.backgroundColor = styleSelected;
+}
+pixelBoard.addEventListener("click", colorePixel);
 
 /** ======= Função Do Button Clear ======= */
 
-//funciona, mas não passa no teste;
+// funciona, mas não passa no teste;
+
 function clearBoard (){
 
   const listaPixelBoard = document.querySelectorAll(".pixel");
   
   for(let i = 0; i < listaPixelBoard.length; i += 1){
-    listaPixelBoard[i].style.backgroundColor = "orange";
+    listaPixelBoard[i].style.backgroundColor = "white";
+    console.log(listaPixelBoard[i].style.backgroundColor = "white");
   }
 }
 buttonClear.addEventListener("click", clearBoard);
