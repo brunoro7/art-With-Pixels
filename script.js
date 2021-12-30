@@ -7,27 +7,53 @@ let tamanhoBoxPixels = 5;
 const linhaBoxPixels = tamanhoBoxPixels;
 const colunaBoxPixels = tamanhoBoxPixels;
 
+const colorPalette = document.getElementById("color-palette");
+
 const pixelBoard = document.getElementById("pixel-board");
 
 const buttonClear = document.getElementById("clear-board");
 
 /** ======= Cada Cor Da Paleta ======= */
 
-const pixelBlack = document.getElementsByTagName("li")[0];
-const pixelBlue = document.getElementsByTagName("li")[1];
-const pixelRed = document.getElementsByTagName("li")[2];
-const pixelGreen = document.getElementsByTagName("li")[3];
+const pixelBlack = document.getElementsByTagName("span")[0];
+const pixelBlue = document.getElementsByTagName("span")[1];
+const pixelRed = document.getElementsByTagName("span")[2];
+const pixelGreen = document.getElementsByTagName("span")[3];
 
 /** ======= Defini a classe .selected ======= */
 
-// let colorSelectedAtual = colorBlack;
 
-// function colorSelected(clickNaPaleta) {
+// function colorSelected (event){
   
-  // if(clickNaPaleta === selectedAtual){
-  // selectedAtual = selectedAtual;
-  // }
+//   const listaDeCores = colorPalette.children; 
+
+//   for( let iColorSelected of listaDeCores){
+    
+//     if (iColorSelected = pixelBlue){
+//      pixelBlack.className = "";
+//      pixelRed.className = "";
+//      pixelGreen.className = "";
+//     event.target.className = ".selected";
+  //   if (iColorSelected = pixelRed){
+  //    pixelBlack.className = "";
+  //    pixelBlue.className = "";
+  //    pixelGreen.className = "";
+  //   event.target.className = ".selected";    
+  //   if (iColorSelected = pixelGreen){
+  //    pixelBlack.className = "";
+  //    pixelBlue.className = "";
+  //    pixelRed.className = "";
+  //   event.target.className = ".selected";
+  //   }
+  //   else {
+  //    pixelBlack.className = "selected";
+  //    pixelBlue.className = "";
+  //    pixelRed.className = "";
+  //    pixelGreen.className = "";
+  //   }
+//   }
 // }
+// colorPalette.addEventListener("click", colorSelected);
 
 /** ======= Função que cria a tabela de Pixels ======= */
 
