@@ -15,45 +15,23 @@ const buttonClear = document.getElementById("clear-board");
 
 /** ======= Cada Cor Da Paleta ======= */
 
-const pixelBlack = document.getElementsByTagName("span")[0];
-const pixelBlue = document.getElementsByTagName("span")[1];
-const pixelRed = document.getElementsByTagName("span")[2];
-const pixelGreen = document.getElementsByTagName("span")[3];
+const pixelBlack = document.getElementsByTagName("span")[0].style;
+const pixelBlue = document.getElementsByTagName("span")[1].style;
+const pixelRed = document.getElementsByTagName("span")[2].style;
+const pixelGreen = document.getElementsByTagName("span")[3].style;
 
 /** ======= Defini a classe .selected ======= */
 
-
-// function colorSelected (event){
+function colorSelected (event){
   
-//   const listaDeCores = colorPalette.children; 
+  const classeSelected = document.getElementsByClassName("selected")[0];
 
-//   for( let iColorSelected of listaDeCores){
-    
-//     if (iColorSelected = pixelBlue){
-//      pixelBlack.className = "";
-//      pixelRed.className = "";
-//      pixelGreen.className = "";
-//     event.target.className = ".selected";
-  //   if (iColorSelected = pixelRed){
-  //    pixelBlack.className = "";
-  //    pixelBlue.className = "";
-  //    pixelGreen.className = "";
-  //   event.target.className = ".selected";    
-  //   if (iColorSelected = pixelGreen){
-  //    pixelBlack.className = "";
-  //    pixelBlue.className = "";
-  //    pixelRed.className = "";
-  //   event.target.className = ".selected";
-  //   }
-  //   else {
-  //    pixelBlack.className = "selected";
-  //    pixelBlue.className = "";
-  //    pixelRed.className = "";
-  //    pixelGreen.className = "";
-  //   }
-//   }
-// }
-// colorPalette.addEventListener("click", colorSelected);
+  // if(classeSelected){
+    classeSelected.classList.remove("selected");
+  // }
+  event.target.classList.toggle("selected");
+}
+colorPalette.addEventListener("click", colorSelected);
 
 /** ======= Função que cria a tabela de Pixels ======= */
 
@@ -86,7 +64,7 @@ function clearBoard (){
   const clearBoard = pixelBoard.children;
   
   for(let i of clearBoard){
-    i.style.backgroundColor = "orange";
+    i.style.backgroundColor = "white";
   }
 }
 buttonClear.addEventListener("click", clearBoard);
