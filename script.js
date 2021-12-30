@@ -57,6 +57,17 @@ function quadroPixel (){
 }
 quadroPixel();
 
+/** ======= Função Que Pinta Cada Pixel ======= */
+
+// function pintaCadaPixel (event){
+  
+//   const pintaCadaPixel = classeSelected.style;
+//   event.target.
+
+// }
+
+
+
 /** ======= Função Do Button Clear ======= */
 
 function clearBoard (){
@@ -64,7 +75,7 @@ function clearBoard (){
   const clearBoard = pixelBoard.children;
   
   for(let i of clearBoard){
-    i.style.backgroundColor = "white";
+    i.style.backgroundColor = "orange";
   }
 }
 buttonClear.addEventListener("click", clearBoard);
