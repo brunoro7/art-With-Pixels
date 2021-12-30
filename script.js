@@ -26,11 +26,9 @@ function colorSelected (event){
   
   const classeSelected = document.getElementsByClassName("selected")[0];
 
-  // if(classeSelected){
     classeSelected.classList.remove("selected");
-  // }
-  event.target.classList.toggle("selected");
-}
+    event.target.classList.toggle("selected");
+  }
 colorPalette.addEventListener("click", colorSelected);
 
 /** ======= Função que cria a tabela de Pixels ======= */
@@ -59,23 +57,22 @@ quadroPixel();
 
 /** ======= Função Que Pinta Cada Pixel ======= */
 
-// function pintaCadaPixel (event){
+// function colorePixel (event){
   
-//   const pintaCadaPixel = classeSelected.style;
-//   event.target.
-
+//   let pixelSelecionadoColorido = document.querySelector("span .selected");
+  
+//   event.target.style.backgroundColor = pixelSelecionadoColorido.style.backgroundColor;
 // }
-
-
+// pixelBoard.addEventListener("click", colorePixel);
 
 /** ======= Função Do Button Clear ======= */
 
 function clearBoard (){
 
-  const clearBoard = pixelBoard.children;
+  const listaPixelBoard = pixelBoard.children;
   
-  for(let i of clearBoard){
-    i.style.backgroundColor = "orange";
+  for(let i of listaPixelBoard){
+    i.style.backgroundColor = "white";
   }
 }
 buttonClear.addEventListener("click", clearBoard);
