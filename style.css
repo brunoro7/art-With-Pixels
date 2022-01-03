@@ -68,3 +68,11 @@ button {
   background-color: green;
   color: aliceblue;
 }
+
+#secaoTamanho, #board-size, #generate-board {
+  display: inline;
+}
+
+#clear-board {
+  margin-top: 10px;
+}

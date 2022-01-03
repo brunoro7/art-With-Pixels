@@ -1,11 +1,4 @@
-/** ======= Vai receber o número do usuário mais pra frente ======= */
-
-let tamanhoBoxPixels = 5;
-
 /** ======= Const's e Let's importantes ======= */
- 
-const linhaBoxPixels = tamanhoBoxPixels;
-const colunaBoxPixels = tamanhoBoxPixels;
 
 const colorPalette = document.getElementById("color-palette");
 
@@ -13,12 +6,37 @@ const pixelBoard = document.getElementById("pixel-board");
 
 const buttonClear = document.getElementById("clear-board");
 
+const btnVqv = document.getElementById("generate-board");
+
+const valorInput = document.getElementById("board-size");
+
 /** ======= Cada Cor Da Paleta ======= */
 
 const pixelBlack = document.getElementsByTagName("span")[0].style;
 const pixelBlue = document.getElementsByTagName("span")[1].style;
 const pixelRed = document.getElementsByTagName("span")[2].style;
 const pixelGreen = document.getElementsByTagName("span")[3].style;
+
+/** ======= Const do Botao e Input de tamanho do quadro ======= */
+
+let tamanhoBoxPixels = 5;
+
+function recebeValorInput (event){
+  
+  let recebeValor = valorInput.value;
+  let valorNumInput = parseInt(recebeValor);
+
+  if(valorNumInput >= 5 && valorNumInput <= 50 &&valorNumInput >=1){
+    tamanhoBoxPixels = valorNumInput;
+  }
+  else{
+    alert("Board inválido")
+  }
+  
+  console.log(tamanhoBoxPixels)
+  quadroPixel()
+}
+btnVqv.addEventListener("click", recebeValorInput)
 
 /** ======= Função que cria a tabela de Pixels ======= */
 
@@ -37,12 +55,13 @@ function quadroPixel (){
         pixelBoard.appendChild(recebePixelInline);
     };
   }
-  // Cálculo do Tamanho do 'quadro' de pixels;
+// Cálculo do Tamanho do 'quadro' de pixels;
+  
   const tamanhoPixel = 42;
   const tamanhoLinhaEmPx = tamanhoPixel*tamanhoBoxPixels;
     pixelBoard.style.width = tamanhoLinhaEmPx + "px";
 }
-quadroPixel();
+quadroPixel()
 
 /** ======= Defini a classe .selected ======= */
 
@@ -57,12 +76,10 @@ colorPalette.addEventListener("click", colorSelected);
 
 /** ======= Função Que Pinta Cada Pixel ======= */
 
-
-
 function colorePixel (event){
     
     const pixelSelecionadoColorido = document.querySelector(".selected");
-    
+
     //windown... vai fazer assim que terminar de carregar;
     const styleSelected = window.getComputedStyle(pixelSelecionadoColorido).getPropertyValue("background-color");  
     
