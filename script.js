@@ -27,30 +27,37 @@ let numAle2 = Math.floor(Math.random()*255);
 let numAle3 = Math.floor(Math.random()*255);
 let montandoTrio1 = [numAle1, numAle2, numAle3];
 let trioNumber1 = montandoTrio1.join(", ");
+let trio1 = "rgb" + "(" + trioNumber1 + ")";
 
 let numAle4 = Math.floor(Math.random()*255);
 let numAle5 = Math.floor(Math.random()*255);
 let numAle6 = Math.floor(Math.random()*255);
 let montandoTrio2 = [numAle4, numAle5, numAle6];
 let trioNumber2 = montandoTrio2.join(", ");
+let trio2 = "rgb" + "(" + trioNumber2 + ")";
 
 let numAle7 = Math.floor(Math.random()*255);
 let numAle8 = Math.floor(Math.random()*255);
 let numAle9 = Math.floor(Math.random()*255);
 let montandoTrio3 = [numAle7, numAle8, numAle9];
 let trioNumber3 = montandoTrio3.join(", ");
+let trio3 = "rgb" + "(" + trioNumber3 + ")";
 
-console.log("trio1");
-console.log(numAle1, numAle2, numAle3);
-console.log(trioNumber1);
+pixelRandom1.backgroundColor = trio1;
+pixelRandom2.backgroundColor = trio2;
+pixelRandom3.backgroundColor = trio3;
 
-console.log("trio2");
-console.log(numAle1, numAle2, numAle3);
-console.log(trioNumber2);
+// console.log("trio1");
+// console.log(numAle1, numAle2, numAle3);
+// console.log(trio1);
 
-console.log("trio3");
-console.log(numAle1, numAle2, numAle3);
-console.log(trioNumber3);
+// console.log("trio2");
+// console.log(numAle4, numAle5, numAle6);
+// console.log(trio2);
+
+// console.log("trio3");
+// console.log(numAle7, numAle8, numAle9);
+// console.log(trio3);
 
 /** ======= Const do Botao e Input de tamanho do quadro ======= */
 
