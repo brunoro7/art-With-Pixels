@@ -20,21 +20,32 @@ const pixelGreen = document.getElementsByTagName("span")[3].style;
 /** ======= Const do Botao e Input de tamanho do quadro ======= */
 
 let tamanhoBoxPixels = 5;
+let tamanhoBoxLinha = tamanhoBoxPixels;
+let tamanhoBoxColuna = tamanhoBoxPixels;
 
 function recebeValorInput (event){
-  
+
   let recebeValor = valorInput.value;
   let valorNumInput = parseInt(recebeValor);
 
-  if(valorNumInput >= 5 && valorNumInput <= 50 &&valorNumInput >=1){
+  if(recebeValor === ""){
+    alert("Board inválido!")
+  }
+  if(valorNumInput <= 4){
+    pixelBoard.innerHTML = "";
+    tamanhoBoxPixels = 5;
+    quadroPixel()
+  }
+  else if(valorNumInput >= 51){
+    pixelBoard.innerHTML = "";
+    tamanhoBoxPixels = 50;
+    quadroPixel()
+  }
+  else {
+    pixelBoard.innerHTML = "";
     tamanhoBoxPixels = valorNumInput;
+    quadroPixel()
   }
-  else{
-    alert("Board inválido")
-  }
-  
-  console.log(tamanhoBoxPixels)
-  quadroPixel()
 }
 btnVqv.addEventListener("click", recebeValorInput)
 
