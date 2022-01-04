@@ -50,23 +50,19 @@ button {
 
 .colorBlack {
   background-color: black;
-  color: aliceblue;
   margin-top: 2px;
 }
 
-.colorBlue {
-  color: aliceblue;
-  background-color: blue;
+#colorRandom1 {
+  background-color: rgb(255, 0, 0);
 }
 
-.colorRed {
-  background-color: red;
-  color: aliceblue;
+#colorRandom2 {
+  background-color: rgb(0, 0, 255);
 }
 
-.colorGreen {
-  background-color: green;
-  color: aliceblue;
+#colorRandom3 {
+  background-color: rgb(0, 255, 0);
 }
 
 #secaoTamanho, #board-size, #generate-board {
@@ -75,4 +71,8 @@ button {
 
 #clear-board {
   margin-top: 10px;
+}
+
+#board-size {
+  margin-top: 7px;
 }
